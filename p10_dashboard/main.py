@@ -134,6 +134,8 @@ def main(argv=None):
                         help='quantidade de produtos no ranking (padrao: 5)')
     parser.add_argument('--sem-grafico', action='store_true',
                         help='nao gerar o arquivo PNG')
+    parser.add_argument('--sem-csv', action='store_true',
+                        help='nao gerar o arquivo CSV')
     args = parser.parse_args(argv)
 
     semear_dados()
@@ -167,7 +169,8 @@ def main(argv=None):
 
     if not args.sem_grafico:
         print(f'\nGráfico gerado: {gerar_grafico(dados, ARQUIVO_GRAFICO)}')
-    print(f'CSV gerado:     {exportar_csv(dados, ARQUIVO_CSV)}')
+    if not args.sem_csv:
+        print(f'CSV gerado:     {exportar_csv(dados, ARQUIVO_CSV)}')
     return 0
 
 

@@ -34,6 +34,8 @@ ProjetoBD-4Bimestre/
 ├── scripts/
 │   ├── iniciar_mongodb.bat       # sobe o MongoDB local
 │   ├── parar_mongodb.bat         # encerra o MongoDB local
+│   ├── demo_apresentacao.bat     # roda a demonstração completa (ensaio)
+│   ├── abrir_compass.bat         # abre o Compass no banco local
 │   └── publicar_github.bat       # envia o projeto para o GitHub
 ├── tests/
 │   └── test_dashboard.py         # 6 testes automatizados do Projeto 10
@@ -118,6 +120,7 @@ Opções:
 python -m p10_dashboard.main --dias 7      # só os últimos 7 dias
 python -m p10_dashboard.main --top 3       # top 3 produtos
 python -m p10_dashboard.main --sem-grafico # não gera o PNG
+python -m p10_dashboard.main --sem-csv     # não gera o CSV
 ```
 
 Saída esperada (12 vendas de exemplo):

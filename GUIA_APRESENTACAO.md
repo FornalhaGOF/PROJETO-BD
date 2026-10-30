@@ -36,7 +36,6 @@ python -m p10_dashboard.main
 ```
 
 Checklist:
-
 - [ ] MongoDB sobe (janela "MongoDB" minimizada aparece)
 - [ ] `verificar_ambiente.py` termina com "Ambiente pronto"
 - [ ] Os 6 testes passam (`OK`)
@@ -46,6 +45,20 @@ Checklist:
 
 > Deixe **duas janelas** abertas antes de começar: uma no terminal (já na pasta do projeto,
 > com o venv ativado) e outra no navegador com o repositório aberto.
+
+### Ensaio com um comando só
+
+```powershell
+scripts\demo_apresentacao.bat
+```
+
+Esse script liga o MongoDB, verifica o ambiente, roda o relatório, prova a idempotência,
+mostra o filtro por período, executa os testes e abre o gráfico — pausando entre as etapas
+com uma frase de apoio. Para ensaiar sem pausas:
+
+```powershell
+scripts\demo_apresentacao.bat auto
+```
 
 ---
 
@@ -206,8 +219,9 @@ capturas de tela do repositório." — por isso tire os prints **antes**.
 1. Print do terminal com o relatório completo.
 2. Print do `grafico_vendas.png` aberto.
 3. Print dos testes com `OK`.
-4. Print do MongoDB Compass mostrando `laboratorio_python` → `vendas_p10` (ou do
-   `verificar_ambiente.py` listando as coleções, se o Compass não estiver instalado).
+4. Print do MongoDB Compass mostrando `laboratorio_python` → `vendas_p10` — abra com
+   `scripts\abrir_compass.bat` (ou, se o Compass não estiver instalado, use o
+   `verificar_ambiente.py` listando as coleções).
 5. Link do repositório público.
 
 Salve os prints em uma pasta `evidencias/` **fora do versionamento** (ou anexe no relatório).
