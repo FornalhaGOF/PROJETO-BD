@@ -2,6 +2,7 @@
 setlocal
 set "COMPASS="
 for %%P in (
+  "C:\Program Files\MongoDB Compass\MongoDBCompass.exe"
   "%LOCALAPPDATA%\MongoDB\Compass\MongoDBCompass.exe"
   "%LOCALAPPDATA%\Programs\MongoDB\Compass\MongoDBCompass.exe"
   "C:\Program Files\MongoDB\Compass\MongoDBCompass.exe"

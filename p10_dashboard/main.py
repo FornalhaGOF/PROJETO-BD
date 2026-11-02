@@ -136,7 +136,13 @@ def main(argv=None):
                         help='nao gerar o arquivo PNG')
     parser.add_argument('--sem-csv', action='store_true',
                         help='nao gerar o arquivo CSV')
+    parser.add_argument('--reset', action='store_true',
+                        help='apaga as vendas e recria os dados de exemplo com datas novas')
     args = parser.parse_args(argv)
+
+    if args.reset:
+        vendas.delete_many({})
+        print('Base de demonstracao recriada.\n')
 
     semear_dados()
 

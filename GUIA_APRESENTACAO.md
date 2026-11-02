@@ -208,6 +208,7 @@ gráfico → testes → documentação. Isso responde o critério de planejament
 | Sem internet | Tudo roda local (MongoDB portátil) — só o link do GitHub precisa de internet |
 | Gráfico não abre | Mostre o PNG já gerado na pasta (é só um arquivo) |
 | Tempo curto | Pule o `--dias 7` e vá direto para os testes e o fechamento |
+| Filtro `--dias 7` volta vazio | Os dados de exemplo são antigos: rode `python -m p10_dashboard.main --reset` para recriar as datas |
 
 **Frase de segurança:** "Se a demo falhar, os resultados já estão documentados no README e nas
 capturas de tela do repositório." — por isso tire os prints **antes**.

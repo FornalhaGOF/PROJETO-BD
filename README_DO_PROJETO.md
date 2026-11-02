@@ -33,6 +33,7 @@ ProjetoBD-4Bimestre/
 ├── verificar_ambiente.py         # checa dependências + conexão
 ├── scripts/
 │   ├── iniciar_mongodb.bat       # sobe o MongoDB local
+│   ├── iniciar_mongodb.ps1       # lógica da inicialização (PowerShell)
 │   ├── parar_mongodb.bat         # encerra o MongoDB local
 │   ├── demo_apresentacao.bat     # roda a demonstração completa (ensaio)
 │   ├── abrir_compass.bat         # abre o Compass no banco local
@@ -121,6 +122,7 @@ python -m p10_dashboard.main --dias 7      # só os últimos 7 dias
 python -m p10_dashboard.main --top 3       # top 3 produtos
 python -m p10_dashboard.main --sem-grafico # não gera o PNG
 python -m p10_dashboard.main --sem-csv     # não gera o CSV
+python -m p10_dashboard.main --reset       # recria a base de exemplo com datas novas
 ```
 
 Saída esperada (12 vendas de exemplo):

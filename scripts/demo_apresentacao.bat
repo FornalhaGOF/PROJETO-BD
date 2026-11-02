@@ -48,7 +48,7 @@ echo [2/4] RELATORIO DE VENDAS (aggregation pipeline)
 echo ------------------------------------------------------------
 echo Fale: "$match filtra, $group soma por categoria, $sort ordena."
 echo.
-"%PY%" -m p10_dashboard.main
+"%PY%" -m p10_dashboard.main --reset
 echo.
 if defined PAUSA pause
 
